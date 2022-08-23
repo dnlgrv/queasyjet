@@ -2,7 +2,11 @@ class AirportsController < ApplicationController
   AIRPORTS = [
     Airport.new("EGNT", "Newcastle"),
     Airport.new("EGLL", "Heathrow"),
-    Airport.new("KJFK", "JFK")
+    Airpott.new("EGPH", "Edinburgh"),
+    Airport.new("KBWI", "Baltimore"),
+    Airport.new("KJFK", "JFK"),
+    Airport.new("KONT", "Ontario"),
+    Airport.new("MMIA", "Colima")
   ]
 
   def index
