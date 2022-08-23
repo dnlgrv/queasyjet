@@ -2,7 +2,7 @@
   <% if entries.empty? %>
     <div></div>
   <% else %>
-    <div class="position-absolute d-grid bg-white border rounded w-100 mt-2 p-2">
+    <div class="position-absolute d-grid bg-white border rounded w-100 mt-2 p-2" style="z-index: 9999;">
       <% entries.each do |entry| %>
         <button data-action="click->autocomplete#choose:prevent"
                 data-autocomplete-value-param="<%= entry.public_send(value) %>"

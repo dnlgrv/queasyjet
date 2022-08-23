@@ -15,5 +15,7 @@ export default class extends Controller {
     this.inputTarget.value = event.params.value
     this.listTarget.src = ""
     this.listTarget.innerHTML = ""
+
+    this.dispatch("choose", { detail: { value: event.params.value } })
   }
 }

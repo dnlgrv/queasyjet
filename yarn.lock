@@ -43,6 +43,10 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+"arc@git+https://github.com/springmeyer/arc.js.git#b005df058b010d1c7aaf3aa451516d41294dac0e":
+  version "0.1.0"
+  resolved "git+https://github.com/springmeyer/arc.js.git#b005df058b010d1c7aaf3aa451516d41294dac0e"
+
 binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
@@ -254,6 +258,18 @@ is-number@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
+
+leaflet-arc@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/leaflet-arc/-/leaflet-arc-1.0.2.tgz#b1e2bdb7bc4c382071fd5bffba299793d263f527"
+  integrity sha512-WBmTEjf2O1IH7Ol6XFbv96l5RYVqO8hvUaR+GsL4TcbeMS9u3PHgZWVUF/ay0CG9HWhiHoJAHJ62Itcqduo6qQ==
+  dependencies:
+    arc "git+https://github.com/springmeyer/arc.js.git#b005df058b010d1c7aaf3aa451516d41294dac0e"
+
+leaflet@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-1.8.0.tgz#4615db4a22a304e8e692cae9270b983b38a2055e"
+  integrity sha512-gwhMjFCQiYs3x/Sf+d49f10ERXaEFCPr+nVTryhAW8DWbMGqJqt9G4XuIaHmFW08zYvhgdzqXGr8AlW8v8dQkA==
 
 normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
