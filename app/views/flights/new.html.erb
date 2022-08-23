@@ -2,7 +2,7 @@
   <h1 class="fs-6 font-medium text-uppercase text-center mb-3">Book a flight</h1>
 
   <%= form_with model: @flight do |f| %>
-    <div class="row">
+    <div class="row mb-3">
       <div class="col" data-controller="autocomplete">
         <div class="position-relative">
           <%= f.label :departure_airport, "Departing from", class: "form-label small" %>
