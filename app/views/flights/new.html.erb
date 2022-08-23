@@ -1,0 +1,17 @@
+<div class="w-50 mx-auto bg-white rounded p-3">
+  <h1 class="fs-6 font-medium text-uppercase text-center mb-3">Book a flight</h1>
+
+  <%= form_for @flight do |f| %>
+    <div class="row">
+      <div class="col">
+        <%= f.label :departure_airport, "Departing from", class: "form-label small" %>
+        <%= f.text_field :departure_airport, class: "form-control" %>
+      </div>
+
+      <div class="col">
+        <%= f.label :arrival_airport, "Flying to", class: "form-label small" %>
+        <%= f.text_field :arrival_airport, class: "form-control" %>
+      </div>
+    </div>
+  <% end %>
+</div>

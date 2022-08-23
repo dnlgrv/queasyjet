@@ -10,7 +10,17 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="bg-light">
+    <header class="mb-5">
+      <nav class="navbar bg-warning">
+        <div class="container">
+          <span class="navbar-brand mb-0 h1">queasyJet</span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <%= yield %>
+    </main>
   </body>
 </html>
