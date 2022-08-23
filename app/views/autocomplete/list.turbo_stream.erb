@@ -1,0 +1,15 @@
+<%= turbo_stream.update dom_id do %>
+  <% if entries.empty? %>
+    <div></div>
+  <% else %>
+    <div class="position-absolute d-grid bg-white border rounded w-100 mt-2 p-2">
+      <% entries.each do |entry| %>
+        <button data-action="click->autocomplete#choose:prevent"
+                data-autocomplete-value-param="<%= entry.public_send(value) %>"
+                class="btn btn-link text-start">
+          <%= entry.public_send(name) %>
+        </button>
+      <% end %>
+    </div>
+  <% end %>
+<% end %>
