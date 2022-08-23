@@ -2,10 +2,10 @@ class AirportsController < ApplicationController
   AIRPORTS = [
     Airport.new("EGNT", "Newcastle"),
     Airport.new("EGLL", "Heathrow"),
-    Airpott.new("EGPH", "Edinburgh"),
+    Airport.new("EGPH", "Edinburgh"),
     Airport.new("KBWI", "Baltimore"),
     Airport.new("KJFK", "JFK"),
-    Airport.new("KONT", "Ontario"),
+    Airport.new("CYOW", "Ontario"),
     Airport.new("MMIA", "Colima")
   ]
 
