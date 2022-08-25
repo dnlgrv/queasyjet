@@ -8,7 +8,7 @@ class FlightsController < ApplicationController
   end
 
   def index
-    @flights = Flight.all
+    @flights = Flight.all.order(created_at: :desc)
   end
 
   private

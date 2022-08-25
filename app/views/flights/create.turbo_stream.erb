@@ -1,3 +1,3 @@
-<%= turbo_stream.append :flights_list do %>
+<%= turbo_stream.prepend :flights_list do %>
   <%= render "flights/flight_row", flight: @flight %>
 <% end %>
