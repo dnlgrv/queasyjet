@@ -1,0 +1,15 @@
+<%= turbo_frame_tag :flights do %>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Departing</th>
+        <th>Arriving</th>
+        <th>Booked at</th>
+      </tr>
+    </thead>
+
+    <tbody id="flights_list">
+      <%= render collection: @flights, partial: "flights/flight_row", as: :flight %>
+    </tbody>
+  </table>
+<% end %>

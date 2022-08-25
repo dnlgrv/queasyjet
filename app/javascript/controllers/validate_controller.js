@@ -11,10 +11,6 @@ export default class extends Controller {
     this.updateButton()
   }
 
-  submit() {
-    alert(`Let's go from ${this.departureTarget.value} to ${this.arrivalTarget.value}!`)
-  }
-
   updateButton() {
     this.buttonTarget.disabled = this.departureTarget.value == "" || this.arrivalTarget.value == ""
   }

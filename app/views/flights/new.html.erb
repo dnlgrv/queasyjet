@@ -1,4 +1,4 @@
-<div class="mx-auto bg-white rounded p-3">
+<section class="mx-auto bg-white rounded p-3 mb-5">
   <h1 class="fs-6 font-medium text-uppercase text-center mb-3">Book a flight</h1>
 
   <%= form_for @flight, data: { controller: "validate" } do |f| %>
@@ -22,11 +22,14 @@
 
     <div class="row">
       <div class="col text-end">
-        <%= f.submit "Find Flights", class: "btn btn-warning", disabled: true, data: {
-          "action": "validate#submit",
-          "validate-target": "button"
-        } %>
+        <%= f.submit "Find Flights", class: "btn btn-warning", disabled: true, data: { "validate-target": "button" } %>
       </div>
     </div>
   <% end %>
-</div>
+</section>
+
+<section class="mx-auto">
+  <h1 class="fs-5 font-medium">Booked Flights</h1>
+
+  <%= turbo_frame_tag :flights, src: flights_path %>
+</section>
