@@ -10,7 +10,12 @@ class AirportsController < ApplicationController
   ]
 
   def index
-    render "autocomplete/list", locals: {dom_id: params[:dom_id], entries: airports_matching(params[:q]), value: :icao, name: :display_name}
+    render "autocomplete/list", locals: {
+      dom_id: params[:dom_id],
+      entries: airports_matching(params[:q]),
+      value: :icao,
+      name: :display_name
+    }
   end
 
   private
