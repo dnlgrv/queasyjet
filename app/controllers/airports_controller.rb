@@ -16,7 +16,7 @@ class AirportsController < ApplicationController
   private
 
   def airports_matching(query)
-    return [] if query.blank? || query.length <= 2
+    return [] if query.blank?
 
     AIRPORTS.filter do |airport|
       airport.name =~ /#{query}/i || airport.icao =~ /^#{query}/i
